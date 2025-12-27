@@ -3,11 +3,11 @@
 // A = P[1+ r/n]^nt
 
 void main() {
-    
+
     Scanner scanner = new Scanner(System.in);
     IO.println("Enter principal amount");
     double principal = scanner.nextDouble();
-    IO.println("Enter interest rate (in %)");
+    IO.println("Enter interest rate (in percent)");
     double rate = scanner.nextDouble() / 100;
     IO.println("Enter # of times compounded per year");
     int timesCompounded = scanner.nextInt();
