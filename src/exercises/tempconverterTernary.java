@@ -11,7 +11,11 @@ public class tempconverterTernary {
         int value, newValue;
         String unit;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("");
+        System.out.println("Enter value");
+        value = scanner.nextInt();
+        System.out.println("Is this Celsius or Fahrenheit (C/F)");
+        unit = scanner.nextLine();
+//        newValue = ()
     }
 
 
