@@ -26,6 +26,7 @@ public class NumberChecker {
         }
         System.out.println("You entered: " + number);
         scanner.close();
+        System.out.println(" ");
 
     }
 }
