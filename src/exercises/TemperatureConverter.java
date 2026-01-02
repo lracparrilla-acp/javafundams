@@ -10,8 +10,8 @@ public class TemperatureConverter {
 
     public static void main(String[] args) {
 
-        double temperatureCelsius = 0;
-        double temperatureFahrenheit = 0;
+        double temperatureCelsius;
+        double temperatureFahrenheit;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("==========TEMPERATURE CONVERTER=========");
