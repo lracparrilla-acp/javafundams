@@ -30,6 +30,7 @@ public class TemperatureConverter {
             System.out.println("You entered " + temperatureFahrenheit + "Fahrenheit.\nConverted to Celsius, " + String.format("%.2f", toCelsius) + " °C");
         } else System.out.println("You entered an invalid value!");
 
+        scanner.close();
 
     }
 
