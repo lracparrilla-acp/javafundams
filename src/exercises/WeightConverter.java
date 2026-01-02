@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /* weight converter. lets the user input whether they want to convert from kg to lbs, or vice versa. */
 
-public class weightconverter {
+public class WeightConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double weightlbs, weightkgs;
