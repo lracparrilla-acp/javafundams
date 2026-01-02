@@ -7,6 +7,7 @@ package basics;
 
 
 public class BankingApplication {
+    // == CONSTANTS ==
     private static final double ANNUAL_INTEREST_RATE = 0.04; //4% annual interest
     private static final int MINIMUM_BALANCE = 100; // Minimum account balance
     private static final int MAXIMUM_WITHDRAWAL = 2000; // Daily withdrawal limit.
@@ -32,11 +33,6 @@ public class BankingApplication {
         this.accountNumber = accountNumber;
         this.monthlyWithdrawals = 0;
 
-        /* Calculates and adds annual interest to the account.
-         * Formula: Interest = Balance * Rate * Time (years)
-         *
-         * @return the amount of interest added.
-         */
 
     }
 
@@ -50,10 +46,9 @@ public class BankingApplication {
         account.depositMoney(500);
         account.withdrawMoney(300);
         account.withdrawMoney(1800); //Exceeds limit
-        account.withdrawMoney(1200); //Will be below minimum
+        account.withdrawMoney(1200); //Will be at minimum
 
         //Apply interest
-
         double interest = account.applyAnnualInterest();
         System.out.println("\nInterest Applied: $" + String.format("%.2f", interest));
 
@@ -61,6 +56,11 @@ public class BankingApplication {
         account.displayAccountSummary();
     }
 
+    /* Calculates and adds annual interest to the account.
+     * Formula: Interest = Balance * Rate * Time (years)
+     *
+     * @return the amount of interest added.
+     */
     public double applyAnnualInterest() {
         double interestAmount = accountBalance * ANNUAL_INTEREST_RATE;
         accountBalance += interestAmount;
