@@ -21,12 +21,12 @@ public class TemperatureConverter {
         if (input == 1) {
             System.out.println("Enter the Value of your Celsius");
             temperatureCelsius = scanner.nextDouble();
-            double toFahrenheit = (temperatureCelsius * 9 / 5) + 32;
+            double toFahrenheit = (temperatureCelsius * FAHRENHEIT_MULTIPLIER) + 32;
             System.out.println("You entered " + temperatureCelsius + "Celsius.\nConverted to Fahrenheit, " + String.format("%.2f", toFahrenheit) + " °F");
         } else if (input == 2) {
             System.out.println("Enter the Value of your Fahrenheit");
             temperatureFahrenheit = scanner.nextDouble();
-            double toCelsius = (temperatureFahrenheit - 32) * 5 / 9;
+            double toCelsius = (temperatureFahrenheit - CELSIUS_OFFSET) * 5 / 9;
             System.out.println("You entered " + temperatureFahrenheit + "Fahrenheit.\nConverted to Celsius, " + String.format("%.2f", toCelsius) + " °C");
         } else System.out.println("You entered an invalid value!");
 
