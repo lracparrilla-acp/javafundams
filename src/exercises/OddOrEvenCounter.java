@@ -13,10 +13,8 @@ public class OddOrEvenCounter {
         System.out.println("Odd or even counter.");
         System.out.println("Input how many numbers");
         quantity = scanner.nextInt();
-        System.out.println("Enter " + quantity + " numbers");
         while (quantity > 0) {
-            System.out.println("Enter a number");
-
+            System.out.println("Enter " + quantity + " more number/s");
             if (scanner.hasNextInt()) {
                 input = scanner.nextInt();
                 if (input % 2 == 0) {
@@ -24,13 +22,14 @@ public class OddOrEvenCounter {
                 } else {
                     oddNumbers++;
                 }
+                quantity--;
             } else {
-                System.out.println("Invalid input!");
+                System.out.println("Invalid input! Try again!");
                 scanner.next();
             }
-            quantity--;
         }
-        System.out.println("Even numbers:" + evenNumbers);
+        System.out.println("Even numbers: " + evenNumbers);
         System.out.println("Odd numbers: " + oddNumbers);
+        scanner.close();
     }
 }
