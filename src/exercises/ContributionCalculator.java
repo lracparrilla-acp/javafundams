@@ -10,10 +10,7 @@ public class ContributionCalculator {
     void main() {
 
 
-        double baseThreshold = 3250.00;
-        double baseContribution = 135.00;
-        double stepSize = 500.00;
-        double stepIncrement = 22.50;
+        double baseThreshold = 3250.00, baseContribution = 135.00, stepSize = 500.00, stepIncrement = 22.50;
 
         Scanner scanner = new Scanner(System.in);
 
