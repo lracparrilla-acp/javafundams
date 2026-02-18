@@ -45,5 +45,6 @@ public class NumberGuessingGame {
         if (hasWon) {
             System.out.print("Your guess is correct! Number of tries: " + (7 - numberOfTries + 1));
         } else System.out.println("Game over! My number is " + randomNumber);
+        scanner.close();
     }
 }
