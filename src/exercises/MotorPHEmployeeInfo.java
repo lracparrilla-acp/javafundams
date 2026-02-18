@@ -21,7 +21,7 @@ class Employee {
  * MotorPH display employee info
  *
  * @author AC Parrilla
- * @version 1.01
+ * @version 1.00
  */
 public class MotorPHEmployeeInfo {
     public static void main(String[] args) {
