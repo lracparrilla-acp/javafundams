@@ -1,9 +1,9 @@
 package exercises;
 
-import java.util.Scanner;  // Import the Scanner class to read user input
+import java.util.Scanner;
 
 public class QuickCartScanner {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // Create a Scanner object to capture input from the keyboard
         Scanner scanner = new Scanner(System.in);
 
